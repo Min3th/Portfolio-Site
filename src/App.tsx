@@ -110,7 +110,7 @@ function App() {
         id="about"
         className="flex flex-col relative justify-center items-center "
       >
-        <div className="rounded-[40px] w-screen h-screen  flex-col flex items-center p-20 justify-center">
+        <div className="rounded-[40px] h-screen  flex-col flex items-center p-20  justify-center sm:w-screen w-[400px] sm:mt-0 mt-[200px] text-center">
           <div className="font-[sans-serif] font-semibold text-[60px] dark:text-white">
             About Me
           </div>
@@ -127,7 +127,7 @@ function App() {
       </div>
       <div
         id="projects"
-        className=" w-screen h-full  flex flex-col relative justify-center items-center"
+        className="h-full  flex flex-col relative justify-center items-center sm:w-screen w-[400px] sm:mt-0 mt-[200px] text-center"
       >
         <div className="font-semibold font-[sans-serif] text-[50px] mt-12 dark:text-white">
           My Projects
@@ -137,7 +137,7 @@ function App() {
           undergraduate
         </div>
         <div className="flex flex-col items-center justify-center">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 m-5">
+          <div className="flex flex-col md:flex-row items-center justify-center sm:gap-4 gap-10 m-5">
             <Card
               link="https://github.com/CS3203-SEP-21-Group-22"
               imageUrl={ims}
@@ -153,7 +153,7 @@ function App() {
               symbols={[react, node]}
             />
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 m-5">
+          <div className="flex flex-col md:flex-row items-center justify-center sm:gap-4 gap-10 m-5">
             <Card
               link="https://min3th.github.io/TasksApp/"
               imageUrl={alarm}
@@ -171,19 +171,22 @@ function App() {
           </div>
         </div>
       </div>
-      <div id="tech" className="w-screen h-screen  flex flex-col relative p-20">
-        <div className=" w-screen h-[200px]  flex-col flex justify-center items-center gap-2 dark:text-white">
-          <p className="font-[sans-serif] font-semibold text-[50px]">
+      <div
+        id="tech"
+        className=" h-screen  flex flex-col relative p-20 justify-center items-center sm:w-screen w-[400px] sm:mt-0 mt-[300px] text-center"
+      >
+        <div className="  flex-col flex justify-center items-center gap-2 dark:text-white ">
+          <p className="font-[sans-serif] font-semibold text-[50px] ">
             Technologies
           </p>
 
-          <p className="text-[20px]">
+          <p className="text-[20px] text-center">
             Below are some of the technologies I am familiar with and have used
             in my work.
           </p>
         </div>
-        <div className=" flex flex-col dark:shadow-lg dark:shadow-gray-800 shadow-lg">
-          <div className="flex flex-wrap justify-center items-center gap-4 dark:text-white">
+        <div className=" flex flex-col dark:shadow-lg dark:shadow-gray-800 shadow-lg justify-center items-center">
+          <div className="flex flex-wrap  justify-center items-center gap-4 dark:text-white">
             <div className="flex flex-col items-center relative w-[120px] h-[120px] md:w-[140px] md:h-[140px] hover:scale-[1.1] duration-200 ease-in-out">
               <img src={net} className="transform scale-[0.5]" />
             </div>
@@ -210,7 +213,7 @@ function App() {
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center items-center gap-4 dark:text-white mt-4 mb-10">
+          {/* <div className="flex flex-wrap justify-center items-center gap-4 dark:text-white mt-4 mb-10">
             <div className="flex flex-col items-center relative w-[120px] h-[120px] md:w-[140px] md:h-[140px] hover:scale-[1.1] duration-200 ease-in-out">
               <img src={java} className="transform scale-[0.5]" />
             </div>
@@ -235,7 +238,7 @@ function App() {
             <div className="flex flex-col items-center w-[120px] h-[120px] md:w-[140px] md:h-[140px] hover:scale-[1.1] duration-200 ease-in-out">
               <img src={tailwind} className="transform scale-[0.55] mt-8" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

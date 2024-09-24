@@ -47,7 +47,7 @@ export default class Navbar extends Component<Props, State> {
     return (
       <div
         id="navScroll"
-        className="w-full h-[60px] bg-black text-white font-[sans-serif] font-semibold tracking-[0.04rem] flex flex-row justify-center items-center gap-8 text-base fixed top-0 z-50 transition-colors duration-200  "
+        className="w-full h-[60px] bg-black text-white font-[sans-serif] font-semibold tracking-[0.04rem] flex flex-row justify-center items-center sm:gap-8 gap-2 text-base fixed top-0 z-50 transition-colors duration-200  "
       >
         <a
           href="#about"
