@@ -173,7 +173,7 @@ function App() {
       </div>
       <div
         id="tech"
-        className=" h-screen  flex flex-col relative p-20 justify-center items-center sm:w-screen w-[400px] sm:mt-0 mt-[300px] text-center"
+        className=" h-screen  flex flex-col relative p-20 justify-center items-center sm:w-screen w-[400px] sm:mt-0 mt-[900px] text-center"
       >
         <div className="  flex-col flex justify-center items-center gap-2 dark:text-white ">
           <p className="font-[sans-serif] font-semibold text-[50px] ">
@@ -213,7 +213,7 @@ function App() {
             </div>
           </div>
 
-          {/* <div className="flex flex-wrap justify-center items-center gap-4 dark:text-white mt-4 mb-10">
+          <div className="flex flex-wrap justify-center items-center gap-4 dark:text-white mt-4 mb-10">
             <div className="flex flex-col items-center relative w-[120px] h-[120px] md:w-[140px] md:h-[140px] hover:scale-[1.1] duration-200 ease-in-out">
               <img src={java} className="transform scale-[0.5]" />
             </div>
@@ -238,7 +238,7 @@ function App() {
             <div className="flex flex-col items-center w-[120px] h-[120px] md:w-[140px] md:h-[140px] hover:scale-[1.1] duration-200 ease-in-out">
               <img src={tailwind} className="transform scale-[0.55] mt-8" />
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
 
