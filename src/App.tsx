@@ -28,6 +28,7 @@ import node from "./images/node.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ReactTyped } from "react-typed";
+import Technologies from "./Sections/technologies";
 
 function App() {
   const copyToClip = (text: string) => {
@@ -157,74 +158,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div
-        id="tech"
-        className="relative mt-[900px] flex h-screen w-[400px] flex-col items-center justify-center p-20 text-center sm:mt-0 sm:w-screen"
-      >
-        <div className="flex flex-col items-center justify-center gap-2 dark:text-white">
-          <p className="font-[sans-serif] text-[50px] font-semibold">Technologies</p>
-
-          <p className="text-center text-[20px]">
-            Below are some of the technologies I am familiar with and have used in my work.
-          </p>
-        </div>
-        <div className="flex flex-col items-center justify-center shadow-lg dark:shadow-lg dark:shadow-gray-800">
-          <div className="flex flex-wrap items-center justify-center gap-4 dark:text-white">
-            <div className="relative flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={net} className="scale-[0.5] transform" title="ASP.NET" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={vite} className="scale-[0.5] transform" title="Vite" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={azure} className="mt-5 scale-[0.6] transform" title="Azure" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={csharp} className="mt-1 scale-[0.9] transform" title="C#" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={cpp} className="mt-2 scale-[0.55] transform" title="" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={c} className="mt-[10px] scale-[0.55] transform" title="C" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={react} className="scale-[0.55] transform" title="ReactJS" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={python} className="scale-[0.55] transform" title="Python" />
-            </div>
-          </div>
-
-          <div className="mb-10 mt-4 flex flex-wrap items-center justify-center gap-4 dark:text-white">
-            <div className="relative flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={java} className="scale-[0.5] transform" title="Java" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={html5} className="scale-[0.5] transform" title="HTML5" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={css3} className="scale-[0.5] transform" title="CSS3" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={flask} className="scale-[0.9] transform" title="Flask" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={js} className="scale-[0.55] transform" title="Javascript" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={mysql} className="scale-[0.55] transform" title="MySQL" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={ts} className="mt-8 scale-[0.55] transform" title="Typescript" />
-            </div>
-            <div className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]">
-              <img src={tailwind} className="mt-8 scale-[0.55] transform" title="Tailwind" />
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <Technologies />
       <Footer />
     </div>
   );
