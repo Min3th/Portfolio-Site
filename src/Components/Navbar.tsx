@@ -10,6 +10,12 @@ export default class Navbar extends Component<Props, State> {
     if (lightSwitches.length > 0) {
       lightSwitches.forEach((lightSwitch, i) => {
         const inputElement = lightSwitch as HTMLInputElement;
+        const storedPref = localStorage.getItem("dark-mode");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (storedPref === "true" || (storedPref == null && prefersDark)) {
+          inputElement.checked = true;
+          document.documentElement.classList.add("dark");
+        }
         if (localStorage.getItem("dark-mode") === "true") {
           inputElement.checked = true;
         }
@@ -47,7 +53,7 @@ export default class Navbar extends Component<Props, State> {
     return (
       <div
         id="navScroll"
-        className="fixed top-0 z-50 flex h-[60px] w-full flex-row items-center justify-center gap-2 bg-black font-[sans-serif] text-base font-semibold tracking-[0.04rem] text-white transition-colors duration-200 sm:gap-8"
+        className="fixed top-0 z-50 flex h-[60px] w-full flex-row items-center justify-center gap-2 bg-black font-[sans-serif] text-base tracking-[0.04rem] text-white transition-colors duration-200 sm:gap-8"
       >
         <a href="#about" className="hov transition duration-[250ms] ease-in-out hover:scale-[1.1]">
           About Me
