@@ -1,6 +1,4 @@
 import React from "react";
-
-// Import your images here
 import net from "../images/net.png";
 import vite from "../images/vite.png";
 import azure from "../images/azure.png";
