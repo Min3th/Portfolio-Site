@@ -7,9 +7,10 @@ const AboutMe: React.FC = () => {
         <div className="font-[sans-serif] text-[60px] font-semibold dark:text-white">About Me</div>
         <div className="m-10 text-center text-[20px] dark:text-white">
           I am passionate about becoming a software engineer and providing value to the web development space. I am
-          interested in full stack applications and solving real-world problems. I'm a team player, being part of the
+          interested in full stack applications and solving real-world problems. I completed my internship and WSO2 pvt
+          ltd, where I contributed mainly to the development of the Visitor App. I'm a team player, being part of the
           University badminton team that has won many tournaments. I'm also an active member of several clubs, having
-          led many successful projects. And I wouldn’t say no to a chocolate milkshake 🧋.
+          led many successful projects.And I wouldn’t say no to a chocolate milkshake 🧋.
         </div>
       </div>
     </div>

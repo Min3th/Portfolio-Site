@@ -40,7 +40,21 @@ const MyProjects: React.FC = () => {
             link="https://github.com/pallawala-resort"
             imageUrl={pallawala}
             title="Pallawala Resort"
-            description="A modern, responsive porfolio website designed to showcase the Pallawala Resort's services, amenities, and aesthetic appeal.Built with React and Tailwind CSS."
+            description={
+              <>
+                A modern, responsive portfolio website showcasing Pallawala Resort’s services, amenities, and natural
+                charm. Built with React and Tailwind CSS. Visit{" "}
+                <a
+                  href="https://www.pallawalaresort.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#3b82f6", textDecoration: "underline" }}
+                >
+                  www.pallawalaresort.com
+                </a>{" "}
+                to book your stay!
+              </>
+            }
             symbols={[react, tailwind]}
           />
         </div>

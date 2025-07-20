@@ -15,6 +15,9 @@ import js from "../images/js.png";
 import mysql from "../images/mySQL.png";
 import ts from "../images/ts.png";
 import tailwind from "../images/tailwind.png";
+import fastapi from "../images/FastAPI.png";
+import mui from "../images/mui.png";
+import ballerina from "../images/ballerina.png";
 
 type TechItem = {
   src: string;
@@ -34,7 +37,7 @@ const techStackTop: TechItem[] = [
   { src: python, title: "Python", scale: "scale-[0.55]" },
 ];
 
-const techStackBottom: TechItem[] = [
+const techStackMiddle: TechItem[] = [
   { src: java, title: "Java", scale: "scale-[0.5]" },
   { src: html5, title: "HTML5", scale: "scale-[0.5]" },
   { src: css3, title: "CSS3", scale: "scale-[0.5]" },
@@ -43,6 +46,11 @@ const techStackBottom: TechItem[] = [
   { src: mysql, title: "MySQL", scale: "scale-[0.55]" },
   { src: ts, title: "TypeScript", scale: "scale-[0.55]", marginTop: "mt-8" },
   { src: tailwind, title: "Tailwind", scale: "scale-[0.55]", marginTop: "mt-8" },
+];
+const techStackBottom: TechItem[] = [
+  { src: fastapi, title: "FastAPI", scale: "scale-[0.5]" },
+  { src: mui, title: "MUI", scale: "scale-[0.5]" },
+  { src: ballerina, title: "Ballerina", scale: "scale-[0.5]" },
 ];
 
 const Technologies: React.FC = () => {
@@ -75,6 +83,21 @@ const Technologies: React.FC = () => {
           ))}
         </div>
 
+        <div className="mb-10 mt-4 flex flex-wrap items-center justify-center gap-4 dark:text-white">
+          {techStackMiddle.map((tech, index) => (
+            <div
+              key={index}
+              className="flex h-[120px] w-[120px] flex-col items-center duration-200 ease-in-out hover:scale-[1.1] md:h-[140px] md:w-[140px]"
+            >
+              <img
+                src={tech.src}
+                title={tech.title}
+                className={`transform ${tech.scale} ${tech.marginTop ?? ""}`}
+                alt={tech.title}
+              />
+            </div>
+          ))}
+        </div>
         <div className="mb-10 mt-4 flex flex-wrap items-center justify-center gap-4 dark:text-white">
           {techStackBottom.map((tech, index) => (
             <div
