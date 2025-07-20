@@ -11,6 +11,8 @@ import azure from "../images/azure.png";
 import node from "../images/node.png";
 import flask from "../images/flask.png";
 import mysql from "../images/mySQL.png";
+import pallawala from "../images/pallawala.png";
+import neurohire from "../images/neurohire.png";
 
 const MyProjects: React.FC = () => {
   return (
@@ -24,6 +26,22 @@ const MyProjects: React.FC = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center">
+        <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
+          <Card
+            link="https://github.com/Himindu-Kularathne/neuro-hire"
+            imageUrl={neurohire}
+            title="NeuroHire"
+            description="An AI powered resume screening system to streamline the hiring process."
+            symbols={[node, react, tailwind, azure]}
+          />
+          <Card
+            link="https://github.com/pallawala-resort"
+            imageUrl={pallawala}
+            title="Pallawala Resort"
+            description="A porfolio page for the Pallawala Resort."
+            symbols={[react, tailwind]}
+          />
+        </div>
         <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
           <Card
             link="https://github.com/CS3203-SEP-21-Group-22"
