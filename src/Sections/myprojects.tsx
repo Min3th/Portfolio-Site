@@ -13,6 +13,8 @@ import flask from "../images/flask.png";
 import mysql from "../images/mySQL.png";
 import pallawala from "../images/pallawala.png";
 import neurohire from "../images/neurohire.png";
+import fastapi from "../images/FastAPI.png";
+import mui from "../images/mui.png";
 
 const MyProjects: React.FC = () => {
   return (
@@ -31,14 +33,14 @@ const MyProjects: React.FC = () => {
             link="https://github.com/Himindu-Kularathne/neuro-hire"
             imageUrl={neurohire}
             title="NeuroHire"
-            description="An AI powered resume screening system to streamline the hiring process."
-            symbols={[node, react, tailwind, azure]}
+            description="An AI-powered resume screening platform that uses Retrieval-Augmented Generation (RAG) to intelligently analyze and shortlist candidates, streamlining the hiring process with enhanced accuracy and relevance."
+            symbols={[node, react, fastapi, mui, mysql, azure]}
           />
           <Card
             link="https://github.com/pallawala-resort"
             imageUrl={pallawala}
             title="Pallawala Resort"
-            description="A porfolio page for the Pallawala Resort."
+            description="A modern, responsive porfolio website designed to showcase the Pallawala Resort's services, amenities, and aesthetic appeal.Built with React and Tailwind CSS."
             symbols={[react, tailwind]}
           />
         </div>
