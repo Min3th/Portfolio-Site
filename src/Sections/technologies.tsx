@@ -21,6 +21,7 @@ import ballerina from "../images/ballerina.png";
 import next from "../images/next.png";
 import supabase from "../images/supabase.png";
 import huggingface from "../images/huggingface.png";
+import mongo from "../images/mongo.png";
 
 type TechItem = {
   src: string;
@@ -57,6 +58,7 @@ const techStackBottom: TechItem[] = [
   { src: ballerina, title: "Ballerina", scale: "scale-[0.5]" },
   { src: huggingface, title: "Huggingface", scale: "scale-[0.5]" },
   { src: next, title: "Next", scale: "scale-[0.5]" },
+  { src: mongo, title: "MongoDB", scale: "scale-[0.5]" },
 ];
 
 const Technologies: React.FC = () => {

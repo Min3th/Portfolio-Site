@@ -15,6 +15,11 @@ import pallawala from "../images/pallawala.png";
 import neurohire from "../images/neurohire.png";
 import fastapi from "../images/FastAPI.png";
 import mui from "../images/mui.png";
+import supabase from "../images/supabase.png";
+import python from "../images/python.png";
+import huggingface from "../images/huggingface.png";
+import next from "../images/next.png";
+import mongo from "../images/mongo.png";
 
 const MyProjects: React.FC = () => {
   return (
@@ -28,6 +33,22 @@ const MyProjects: React.FC = () => {
       </div>
       <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
         <Card
+          link="https://github.com/Himindu-Kularathne/worker-trust-system"
+          imageUrl={alarm}
+          title="Worker Trust System"
+          description="Built completely using React, this is an individual project of mine. It is a task tracking application with a notification alarm, and uses the browser's local storage to store user's data."
+          symbols={[react, supabase]}
+        />
+        <Card
+          link="https://github.com/Min3th/gitfraud-analyser"
+          imageUrl={flaskapp}
+          title="GitFraud Analyzer"
+          description="A supply chain management system to help companies with delivering their products to wholesalers, retailers and other middlemen. This is my first web application and is completely written using Flask, with MySQL for the database."
+          symbols={[python, huggingface]}
+        />
+      </div>
+      <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
+        <Card
           link="https://min3th.github.io/TasksApp/"
           imageUrl={alarm}
           title="GitFraud Analyzer"
@@ -35,11 +56,11 @@ const MyProjects: React.FC = () => {
           symbols={[react]}
         />
         <Card
-          link="https://github.com/Min3th/supplychain"
+          link="https://github.com/Min3th/AnonymousThoughts"
           imageUrl={flaskapp}
-          title="Worker Trust System"
+          title="Annonymous Thoughts"
           description="A supply chain management system to help companies with delivering their products to wholesalers, retailers and other middlemen. This is my first web application and is completely written using Flask, with MySQL for the database."
-          symbols={[flask, mysql]}
+          symbols={[next, mongo]}
         />
       </div>
       <div className="flex flex-col items-center justify-center">
