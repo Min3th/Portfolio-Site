@@ -20,9 +20,9 @@ const Card: React.FC<CardProps> = ({
       href={link} // Set the href to the link prop
       target="_blank"
       rel="noopener noreferrer"
-      className="relative block h-[600px] w-[300px] cursor-pointer overflow-hidden rounded-lg border bg-[#FCFCFF] p-2 shadow-lg transition duration-[250ms] ease-in-out hover:scale-[1.05] dark:border-none dark:bg-gray-900 dark:shadow-md dark:shadow-gray-800 sm:h-[400px] sm:w-[590px]"
+      className="relative block h-[600px] w-[300px] cursor-pointer overflow-hidden rounded-lg border bg-[#FCFCFF] shadow-lg transition duration-[250ms] ease-in-out hover:scale-[1.05] dark:border-none dark:bg-gray-900 dark:shadow-md dark:shadow-gray-800 sm:h-[400px] sm:w-[590px]"
     >
-      <img src={imageUrl} alt={title} className="h-48 w-full object-contain" />
+      <img src={imageUrl} alt={title} className="h-48 w-full object-cover" />
       <div className="p-4 dark:text-blue-100">
         <h2 className="text-xl font-bold">{title}</h2>
         <p className="mt-2 text-gray-600 dark:text-gray-400">{description}</p>

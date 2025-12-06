@@ -26,7 +26,22 @@ const MyProjects: React.FC = () => {
       <div className="text-[20px] dark:text-white">
         Below are some of the projects I have worked on as a Computer Science undergraduate
       </div>
-
+      <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
+        <Card
+          link="https://min3th.github.io/TasksApp/"
+          imageUrl={alarm}
+          title="GitFraud Analyzer"
+          description="Built completely using React, this is an individual project of mine. It is a task tracking application with a notification alarm, and uses the browser's local storage to store user's data."
+          symbols={[react]}
+        />
+        <Card
+          link="https://github.com/Min3th/supplychain"
+          imageUrl={flaskapp}
+          title="Worker Trust System"
+          description="A supply chain management system to help companies with delivering their products to wholesalers, retailers and other middlemen. This is my first web application and is completely written using Flask, with MySQL for the database."
+          symbols={[flask, mysql]}
+        />
+      </div>
       <div className="flex flex-col items-center justify-center">
         <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
           <Card
