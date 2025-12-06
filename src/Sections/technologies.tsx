@@ -18,6 +18,9 @@ import tailwind from "../images/tailwind.png";
 import fastapi from "../images/FastAPI.png";
 import mui from "../images/mui.png";
 import ballerina from "../images/ballerina.png";
+import next from "../images/next.png";
+import supabase from "../images/supabase.png";
+import huggingface from "../images/huggingface.png";
 
 type TechItem = {
   src: string;
@@ -50,7 +53,10 @@ const techStackMiddle: TechItem[] = [
 const techStackBottom: TechItem[] = [
   { src: fastapi, title: "FastAPI", scale: "scale-[0.5]" },
   { src: mui, title: "MUI", scale: "scale-[0.5]" },
+  { src: supabase, title: "Supabase", scale: "scale-[0.5]" },
   { src: ballerina, title: "Ballerina", scale: "scale-[0.5]" },
+  { src: huggingface, title: "Huggingface", scale: "scale-[0.5]" },
+  { src: next, title: "Next", scale: "scale-[0.5]" },
 ];
 
 const Technologies: React.FC = () => {
