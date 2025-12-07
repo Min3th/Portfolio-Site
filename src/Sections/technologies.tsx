@@ -18,7 +18,7 @@ import tailwind from "../images/tailwind.png";
 import fastapi from "../images/FastAPI.png";
 import mui from "../images/mui.png";
 import ballerina from "../images/ballerina.png";
-import next from "../images/next.png";
+import nextBlack from "../images/next-black.png";
 import supabase from "../images/supabase.png";
 import huggingface from "../images/huggingface.png";
 import mongo from "../images/mongo.png";
@@ -28,6 +28,7 @@ type TechItem = {
   title: string;
   scale?: string;
   marginTop?: string;
+  dark?: string;
 };
 
 const techStackTop: TechItem[] = [
@@ -57,7 +58,7 @@ const techStackBottom: TechItem[] = [
   { src: supabase, title: "Supabase", scale: "scale-[0.5]" },
   { src: ballerina, title: "Ballerina", scale: "scale-[0.5]" },
   { src: huggingface, title: "Huggingface", scale: "scale-[0.5]" },
-  { src: next, title: "Next", scale: "scale-[0.5]" },
+  { src: nextBlack, title: "Next", scale: "scale-[0.5]", dark: "dark:brightness-200 dark:invert" },
   { src: mongo, title: "MongoDB", scale: "scale-[0.5]" },
 ];
 
@@ -115,7 +116,7 @@ const Technologies: React.FC = () => {
               <img
                 src={tech.src}
                 title={tech.title}
-                className={`transform ${tech.scale} ${tech.marginTop ?? ""}`}
+                className={`transform ${tech.scale} ${tech.marginTop ?? ""} ${tech.dark ?? ""}`}
                 alt={tech.title}
               />
             </div>

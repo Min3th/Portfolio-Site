@@ -18,7 +18,7 @@ import mui from "../images/mui.png";
 import supabase from "../images/supabase.png";
 import python from "../images/python.png";
 import huggingface from "../images/huggingface.png";
-import next from "../images/next.png";
+import nextBlack from "../images/next-black.png";
 import mongo from "../images/mongo.png";
 
 const MyProjects: React.FC = () => {
@@ -60,7 +60,7 @@ const MyProjects: React.FC = () => {
           imageUrl={flaskapp}
           title="Annonymous Thoughts"
           description="A supply chain management system to help companies with delivering their products to wholesalers, retailers and other middlemen. This is my first web application and is completely written using Flask, with MySQL for the database."
-          symbols={[next, mongo]}
+          symbols={[nextBlack, mongo]}
         />
       </div>
       <div className="flex flex-col items-center justify-center">
