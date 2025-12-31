@@ -36,24 +36,8 @@ const MyProjects: React.FC = () => {
           link="https://github.com/Himindu-Kularathne/worker-trust-system"
           imageUrl={alarm}
           title="Worker Trust System"
-          description="Built completely using React, this is an individual project of mine. It is a task tracking application with a notification alarm, and uses the browser's local storage to store user's data."
+          description="A mobile application to help users find trustworthy workers for their needs.Built using React native and Supabase, this app allows users to rate and review workers based on their performance.Included SMS integration with Twilio, Expo-location, and Resend for email services."
           symbols={[react, supabase]}
-        />
-        <Card
-          link="https://github.com/Min3th/gitfraud-analyser"
-          imageUrl={flaskapp}
-          title="GitFraud Analyzer"
-          description="A supply chain management system to help companies with delivering their products to wholesalers, retailers and other middlemen. This is my first web application and is completely written using Flask, with MySQL for the database."
-          symbols={[python, huggingface]}
-        />
-      </div>
-      <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
-        <Card
-          link="https://min3th.github.io/TasksApp/"
-          imageUrl={alarm}
-          title="GitFraud Analyzer"
-          description="Built completely using React, this is an individual project of mine. It is a task tracking application with a notification alarm, and uses the browser's local storage to store user's data."
-          symbols={[react]}
         />
         <Card
           link="https://github.com/Min3th/AnonymousThoughts"
@@ -63,15 +47,24 @@ const MyProjects: React.FC = () => {
           symbols={[nextBlack, mongo]}
         />
       </div>
+      <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
+        <Card
+          link="https://github.com/Min3th/gitfraud-analyser"
+          imageUrl={flaskapp}
+          title="GitFraud Analyzer"
+          description="A supply chain management system to help companies with delivering their products to wholesalers, retailers and other middlemen. This is my first web application and is completely written using Flask, with MySQL for the database."
+          symbols={[python, huggingface]}
+        />
+        <Card
+          link="https://github.com/Himindu-Kularathne/neuro-hire"
+          imageUrl={neurohire}
+          title="NeuroHire"
+          description="An AI-powered resume screening platform that uses Retrieval-Augmented Generation (RAG) to intelligently analyze and shortlist candidates, streamlining the hiring process with enhanced accuracy and relevance."
+          symbols={[node, react, fastapi, mui, mysql, azure]}
+        />
+      </div>
       <div className="flex flex-col items-center justify-center">
         <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
-          <Card
-            link="https://github.com/Himindu-Kularathne/neuro-hire"
-            imageUrl={neurohire}
-            title="NeuroHire"
-            description="An AI-powered resume screening platform that uses Retrieval-Augmented Generation (RAG) to intelligently analyze and shortlist candidates, streamlining the hiring process with enhanced accuracy and relevance."
-            symbols={[node, react, fastapi, mui, mysql, azure]}
-          />
           <Card
             link="https://github.com/pallawala-resort"
             imageUrl={pallawala}
@@ -93,14 +86,21 @@ const MyProjects: React.FC = () => {
             }
             symbols={[react, tailwind]}
           />
-        </div>
-        <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
           <Card
             link="https://github.com/CS3203-SEP-21-Group-22"
             imageUrl={ims}
             title="Inventory Management System"
             description="My ongoing semester 5 group project, an Inventory Management System for Computer Laboratories. Developing using React for the front end, .NET for backend with MySQL as the database. Will be using Azure Cloud for deployment."
             symbols={[net, react, tailwind, azure]}
+          />
+        </div>
+        <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
+          <Card
+            link="https://github.com/Min3th/supplychain"
+            imageUrl={flaskapp}
+            title="Supply Chain Management System"
+            description="A supply chain management system to help companies with delivering their products to wholesalers, retailers and other middlemen. This is my first web application and is completely written using Flask, with MySQL for the database."
+            symbols={[flask, mysql]}
           />
           <Card
             link="https://github.com/Hevb890/UMISF-Registration/tree/main"
@@ -119,13 +119,13 @@ const MyProjects: React.FC = () => {
             description="Built completely using React, this is an individual project of mine. It is a task tracking application with a notification alarm, and uses the browser's local storage to store user's data."
             symbols={[react]}
           />
-          <Card
+          {/* <Card
             link="https://github.com/Min3th/supplychain"
             imageUrl={flaskapp}
             title="Supply Chain Management System"
             description="A supply chain management system to help companies with delivering their products to wholesalers, retailers and other middlemen. This is my first web application and is completely written using Flask, with MySQL for the database."
             symbols={[flask, mysql]}
-          />
+          /> */}
         </div>
       </div>
     </div>
