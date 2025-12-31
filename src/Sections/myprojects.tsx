@@ -20,6 +20,8 @@ import python from "../images/python.png";
 import huggingface from "../images/huggingface.png";
 import nextBlack from "../images/next-black.png";
 import mongo from "../images/mongo.png";
+import WorkerTrust from "../images/Worker-trust.png";
+import Anon from "../images/AnonymousThought.png";
 
 const MyProjects: React.FC = () => {
   return (
@@ -34,17 +36,17 @@ const MyProjects: React.FC = () => {
       <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
         <Card
           link="https://github.com/Himindu-Kularathne/worker-trust-system"
-          imageUrl={alarm}
+          imageUrl={WorkerTrust}
           title="Worker Trust System"
           description="A mobile application to help users find trustworthy workers for their needs.Built using React native and Supabase, this app allows users to rate and review workers based on their performance.Included SMS integration with Twilio, Expo-location, and Resend for email services."
           symbols={[react, supabase]}
         />
         <Card
           link="https://github.com/Min3th/AnonymousThoughts"
-          imageUrl={flaskapp}
+          imageUrl={Anon}
           title="Annonymous Thoughts"
-          description="A supply chain management system to help companies with delivering their products to wholesalers, retailers and other middlemen. This is my first web application and is completely written using Flask, with MySQL for the database."
-          symbols={[nextBlack, mongo]}
+          description="A web application that allows users to share their thoughts and feelings anonymously. Built using Next.js , Node.js and MongoDB, this app provides a safe space for users to express themselves without fear of judgement.Contains a huggingface model integration to detect and filter harmful content."
+          symbols={[nextBlack, mongo, huggingface]}
         />
       </div>
       <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
@@ -52,7 +54,7 @@ const MyProjects: React.FC = () => {
           link="https://github.com/Min3th/gitfraud-analyser"
           imageUrl={flaskapp}
           title="GitFraud Analyzer"
-          description="A supply chain management system to help companies with delivering their products to wholesalers, retailers and other middlemen. This is my first web application and is completely written using Flask, with MySQL for the database."
+          description="A tool to detect fraudulet git graphs by checking past commit patterns and identifying anomalies."
           symbols={[python, huggingface]}
         />
         <Card

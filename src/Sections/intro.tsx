@@ -64,8 +64,8 @@ const Intro: React.FC = () => {
           <div className="h-10 w-[1px] bg-black dark:bg-white"></div>
 
           <a
-            href="/My_CV.pdf"
-            download="My_CV.pdf"
+            href="/My_CV (4).pdf"
+            download="My_CV (4).pdf"
             className="mt-2 rounded border-[1.3px] border-black bg-[#FCFCFF] p-2 font-medium transition duration-[250] ease-in-out hover:scale-[1.1] hover:border-[0px] hover:bg-white hover:shadow dark:border-white dark:bg-black dark:text-white sm:p-3"
           >
             Download CV
