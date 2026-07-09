@@ -51,15 +51,14 @@ const Intro: React.FC = () => {
             href="https://www.linkedin.com/in/mineth-weerasinghe-2551b0241"
             target="_blank"
             rel="noopener noreferrer"
-            className="fa-brands fa-linkedin text-[35px] dark:text-white md:text-[40px]"
-          ></a>
+            aria-label="LinkedIn"
+          >
+            <i className="fa-brands fa-linkedin text-[35px] dark:text-white md:text-[40px]" aria-hidden="true" />
+          </a>
 
-          <a
-            href="https://github.com/Min3th"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="fa-brands fa-github text-[35px] dark:text-white md:text-[40px]"
-          ></a>
+          <a href="https://github.com/Min3th" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i className="fa-brands fa-github text-[35px] dark:text-white md:text-[40px]" aria-hidden="true" />
+          </a>
 
           <div className="h-10 w-[1px] bg-black dark:bg-white"></div>
 

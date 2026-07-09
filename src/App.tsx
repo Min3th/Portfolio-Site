@@ -9,17 +9,6 @@ import AboutMe from "./Sections/aboutme";
 import Intro from "./Sections/intro";
 
 function App() {
-  const copyToClip = (text: string) => {
-    navigator.clipboard.writeText(text).then(
-      () => {
-        toast.success("Text copied to clipboard");
-      },
-      (err) => {
-        toast.error("Failed to copy text");
-      },
-    );
-  };
-
   return (
     <div className="h-full w-full overflow-x-hidden scroll-smooth bg-white transition-colors duration-300 dark:bg-black">
       <ToastContainer autoClose={4000} hideProgressBar theme="dark" />
