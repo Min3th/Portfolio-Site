@@ -1,10 +1,8 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import profile from "./images/profile.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { ReactTyped } from "react-typed";
 import Technologies from "./Sections/technologies";
 import MyProjects from "./Sections/myprojects";
 import AboutMe from "./Sections/aboutme";
