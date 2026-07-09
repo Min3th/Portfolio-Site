@@ -64,7 +64,7 @@ const Intro: React.FC = () => {
           <div className="h-10 w-[1px] bg-black dark:bg-white"></div>
 
           <a
-            href="/New_CV.pdf"
+            href="/Mineth_Weerasinghe_CV.pdf"
             download="Mineth_Weerasinghe_CV.pdf"
             className="mt-2 rounded border-[1.3px] border-black bg-[#FCFCFF] p-2 font-medium transition duration-[250] ease-in-out hover:scale-[1.1] hover:border-[0px] hover:bg-white hover:shadow dark:border-white dark:bg-black dark:text-white sm:p-3"
           >

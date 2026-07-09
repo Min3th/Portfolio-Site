@@ -22,6 +22,8 @@ import nextBlack from "../images/next-black.png";
 import mongo from "../images/mongo.png";
 import WorkerTrust from "../images/Worker-trust.png";
 import Anon from "../images/AnonymousThought.png";
+import SubTrak from "../images/SubTrak.png";
+import Spring from "../images/sprinboot.png";
 
 const MyProjects: React.FC = () => {
   return (
@@ -35,12 +37,21 @@ const MyProjects: React.FC = () => {
       </div>
       <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
         <Card
+          link="https://github.com/Min3th/subscription_tracker"
+          imageUrl={SubTrak}
+          title="Subscription Tracker"
+          description="A web application to help users manage their subscriptions and track expenses. Includes schedule based email notifications for subscription renewal and payments."
+          symbols={[react, Spring, mysql]}
+        />
+        <Card
           link="https://github.com/Himindu-Kularathne/worker-trust-system"
           imageUrl={WorkerTrust}
           title="Worker Trust System"
           description="A mobile application to help users find trustworthy workers for their needs.Built using React native and Supabase, this app allows users to rate and review workers based on their performance.Included SMS integration with Twilio, Expo-location, and Resend for email services."
           symbols={[react, supabase]}
         />
+      </div>
+      <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
         <Card
           link="https://github.com/Min3th/AnonymousThoughts"
           imageUrl={Anon}
@@ -48,15 +59,7 @@ const MyProjects: React.FC = () => {
           description="A web application that allows users to share their thoughts and feelings anonymously. Built using Next.js , Node.js and MongoDB, this app provides a safe space for users to express themselves without fear of judgement.Contains a huggingface model integration to detect and filter harmful content."
           symbols={[nextBlack, mongo, huggingface]}
         />
-      </div>
-      <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
-        <Card
-          link="https://github.com/Min3th/gitfraud-analyser"
-          imageUrl={flaskapp}
-          title="GitFraud Analyzer"
-          description="A tool to detect fraudulet git graphs by checking past commit patterns and identifying anomalies."
-          symbols={[python, huggingface]}
-        />
+
         <Card
           link="https://github.com/Himindu-Kularathne/neuro-hire"
           imageUrl={neurohire}
@@ -98,37 +101,44 @@ const MyProjects: React.FC = () => {
         </div>
         <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
           <Card
+            link="https://github.com/Min3th/gitfraud-analyser"
+            imageUrl={flaskapp}
+            title="GitFraud Analyzer"
+            description="A tool to detect fraudulet git graphs by checking past commit patterns and identifying anomalies."
+            symbols={[python, huggingface]}
+          />
+          <Card
             link="https://github.com/Min3th/supplychain"
             imageUrl={flaskapp}
             title="Supply Chain Management System"
             description="A supply chain management system to help companies with delivering their products to wholesalers, retailers and other middlemen. This is my first web application and is completely written using Flask, with MySQL for the database."
             symbols={[flask, mysql]}
           />
-          <Card
+          {/* <Card
             link="https://github.com/Hevb890/UMISF-Registration/tree/main"
             imageUrl={umisf}
             title="Registration Portal for UMISF"
             description="This is an ongoing group project for the UMISF Badminton tournament, a registration portal to handle the participant applications and for tournament organizers to keep track of monetary transactions. I am mainly responsible for developing the front-end. Uses React for the front-end and Node for back-end."
             symbols={[react, node]}
-          />
+          /> */}
         </div>
 
-        <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
-          <Card
+        {/* <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row"> */}
+        {/* <Card
             link="https://min3th.github.io/TasksApp/"
             imageUrl={alarm}
             title="Task app with Alarm"
             description="Built completely using React, this is an individual project of mine. It is a task tracking application with a notification alarm, and uses the browser's local storage to store user's data."
             symbols={[react]}
-          />
-          {/* <Card
+          /> */}
+        {/* <Card
             link="https://github.com/Min3th/supplychain"
             imageUrl={flaskapp}
             title="Supply Chain Management System"
             description="A supply chain management system to help companies with delivering their products to wholesalers, retailers and other middlemen. This is my first web application and is completely written using Flask, with MySQL for the database."
             symbols={[flask, mysql]}
           /> */}
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );
