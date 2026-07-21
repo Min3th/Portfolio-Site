@@ -22,6 +22,7 @@ import WorkerTrust from "../images/Worker-trust.png";
 import Anon from "../images/AnonymousThought.png";
 import SubTrak from "../images/SubTrak.png";
 import Spring from "../images/sprinboot.png";
+import AWS from "../images/aws.png";
 
 const MyProjects: React.FC = () => {
   return (
@@ -39,7 +40,7 @@ const MyProjects: React.FC = () => {
           imageUrl={SubTrak}
           title="Subscription Tracker"
           description="A web application to help users manage their subscriptions and track expenses. Includes schedule based email notifications for subscription renewal and payments."
-          symbols={[react, Spring, mysql]}
+          symbols={[react, Spring, mysql, AWS]}
         />
         <Card
           link="https://github.com/Himindu-Kularathne/worker-trust-system"

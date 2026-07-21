@@ -7,6 +7,7 @@ import Technologies from "./Sections/technologies";
 import MyProjects from "./Sections/myprojects";
 import AboutMe from "./Sections/aboutme";
 import Intro from "./Sections/intro";
+import Publications from "./Sections/publications";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Intro />
       <AboutMe />
       <MyProjects />
+      <Publications />
       <Technologies />
       <Footer />
     </div>

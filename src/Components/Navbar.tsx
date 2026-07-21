@@ -61,6 +61,9 @@ export default class Navbar extends Component<Props, State> {
         <a href="#projects" className="hov transition duration-[250ms] ease-in-out hover:scale-[1.1]">
           My Projects
         </a>
+        <a href="#publications" className="hov transition duration-[250ms] ease-in-out hover:scale-[1.1]">
+          Publications
+        </a>
         <a href="#tech" className="hov transition duration-[250ms] ease-in-out hover:scale-[1.1]">
           Technologies
         </a>
