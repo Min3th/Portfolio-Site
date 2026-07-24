@@ -7,7 +7,7 @@ const AboutMe: React.FC = () => {
       <div className="absolute top-1/2 left-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/5 blur-[100px] dark:bg-blue-600/5 pointer-events-none"></div>
 
       <div className="relative z-10 flex max-w-4xl flex-col items-center justify-center px-6 text-center">
-        <h2 className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-4xl font-bold tracking-tight text-transparent dark:from-blue-400 dark:to-purple-400 sm:text-5xl md:text-6xl">
+        <h2 className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent py-2 leading-relaxed text-4xl font-bold tracking-tight dark:from-blue-400 dark:to-purple-400 sm:text-5xl md:text-6xl">
           About Me
         </h2>
         

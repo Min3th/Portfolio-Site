@@ -10,7 +10,7 @@ const Publications: React.FC = () => {
       <div className="absolute top-1/2 left-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/5 blur-[100px] dark:bg-purple-600/5 pointer-events-none"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center gap-4 px-6 sm:px-12 md:px-24 text-center">
-        <h2 className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent text-4xl sm:text-[50px] font-bold tracking-tight dark:from-blue-400 dark:to-purple-400">
+        <h2 className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent py-2 leading-relaxed text-4xl sm:text-[50px] font-bold tracking-tight dark:from-blue-400 dark:to-purple-400">
           Publications
         </h2>
         <p className="max-w-2xl text-lg sm:text-[20px] text-gray-600 dark:text-gray-300">
