@@ -22,6 +22,7 @@ import nextBlack from "../images/next-black.png";
 import supabase from "../images/supabase.png";
 import huggingface from "../images/huggingface.png";
 import mongo from "../images/mongo.png";
+import aws from "../images/aws.png";
 
 type TechItem = {
   src: string;
@@ -32,7 +33,7 @@ type TechItem = {
 };
 
 const techStackTop: TechItem[] = [
-  { src: net, title: "ASP.NET", scale: "scale-[0.5]" },
+  { src: aws, title: "AWS", scale: "scale-[1.5]", marginTop: "mt-10" },
   { src: vite, title: "Vite", scale: "scale-[0.5]" },
   { src: azure, title: "Azure", scale: "scale-[0.6]", marginTop: "mt-5" },
   { src: csharp, title: "C#", scale: "scale-[0.9]", marginTop: "mt-1" },
@@ -60,6 +61,7 @@ const techStackBottom: TechItem[] = [
   { src: huggingface, title: "Huggingface", scale: "scale-[0.5]" },
   { src: nextBlack, title: "Next", scale: "scale-[0.5]", dark: "dark:brightness-200 dark:invert" },
   { src: mongo, title: "MongoDB", scale: "scale-[0.5]" },
+  { src: net, title: "ASP.NET", scale: "scale-[0.5]" },
 ];
 
 const Technologies: React.FC = () => {

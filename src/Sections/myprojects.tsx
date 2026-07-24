@@ -23,6 +23,7 @@ import Anon from "../images/AnonymousThought.png";
 import SubTrak from "../images/SubTrak.png";
 import Spring from "../images/sprinboot.png";
 import AWS from "../images/aws.png";
+import gitfraud from "../images/gitfraud.png";
 
 const MyProjects: React.FC = () => {
   return (
@@ -101,7 +102,7 @@ const MyProjects: React.FC = () => {
         <div className="m-5 flex flex-col items-center justify-center gap-10 sm:gap-4 md:flex-row">
           <Card
             link="https://github.com/Min3th/gitfraud-analyser"
-            imageUrl={flaskapp}
+            imageUrl={gitfraud}
             title="GitFraud Analyzer"
             description="A tool to detect fraudulet git graphs by checking past commit patterns and identifying anomalies."
             symbols={[python, huggingface]}
