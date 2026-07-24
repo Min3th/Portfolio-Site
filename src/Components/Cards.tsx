@@ -5,7 +5,7 @@ type CardProps = {
   title: string;
   description: string | ReactNode;
   symbols: string[];
-  link: string; // Add this prop to pass the GitHub repo link
+  link: string; 
 };
 
 const Card: React.FC<CardProps> = ({
@@ -13,24 +13,26 @@ const Card: React.FC<CardProps> = ({
   title,
   description,
   symbols,
-  link, // Destructure the link prop
+  link, 
 }) => {
   return (
     <a
-      href={link} // Set the href to the link prop
+      href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="relative block h-[600px] w-[300px] cursor-pointer overflow-hidden rounded-lg border bg-[#fffcfe] shadow-lg transition duration-[250ms] ease-in-out hover:scale-[1.05] dark:border-none dark:bg-gray-900 dark:shadow-md dark:shadow-black sm:h-[400px] sm:w-[590px]"
+      className="group relative flex h-auto min-h-[450px] w-full max-w-[500px] flex-col overflow-hidden rounded-2xl bg-white/40 border border-white/60 shadow-lg backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-white/60 dark:bg-gray-900/40 dark:border-gray-700/50 dark:hover:bg-gray-800/60"
     >
-      <img src={imageUrl} alt={title} className="h-48 w-full object-cover" />
-      <div className="p-4 dark:text-blue-100">
-        <h2 className="text-xl font-bold">{title}</h2>
-        <p className="mt-2 text-gray-600 dark:text-gray-400">{description}</p>
+      <div className="overflow-hidden">
+        <img src={imageUrl} alt={title} className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
       </div>
-      <div className="absolute bottom-0 right-0 flex h-[65px] w-[300px] justify-end space-x-2 p-4">
-        {symbols.map((symbol, index) => (
-          <img key={index} src={symbol} alt={`symbol-${index}`} />
-        ))}
+      <div className="flex flex-1 flex-col p-6">
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{title}</h3>
+        <p className="mt-3 flex-1 text-base text-gray-600 dark:text-gray-300">{description}</p>
+        <div className="mt-6 flex flex-wrap items-center justify-end gap-3">
+          {symbols.map((symbol, index) => (
+            <img key={index} src={symbol} alt={`symbol-${index}`} className="h-8 w-8 object-contain" />
+          ))}
+        </div>
       </div>
     </a>
   );

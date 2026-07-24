@@ -1,23 +1,28 @@
-import React, { Component } from "react";
+import React from "react";
 
-type Props = {};
-
-type State = {};
-
-export default class Footer extends Component<Props, State> {
-  state = {};
-
-  render() {
-    return (
-      <div className="w-full h-[200px] bg-black flex flex-col justify-center items-center text-white relative sm:mt-0 mt-[900px]">
-        <div className="text-[30px] font-semibold">Technologies used</div>
-        <div className="flex-row flex mt-6 gap-4 items-center text-gray-200">
-          <p className="bg-gray-800 p-1 rounded-[4px]">React</p>
-          <p className="bg-gray-800 p-1 rounded-[4px]">Typescript</p>
-          <p className="bg-gray-800 p-1 rounded-[4px]">Tailwind CSS</p>
-          <p className="bg-gray-800 p-1 rounded-[4px]">HTML5</p>
-        </div>
+const Footer: React.FC = () => {
+  return (
+    <footer className="relative flex w-full flex-col items-center justify-center bg-gray-50 py-12 text-gray-900 dark:bg-black dark:text-white border-t border-gray-200 dark:border-gray-900">
+      <div className="text-2xl font-bold tracking-tight">Built With</div>
+      <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+        <span className="rounded-full bg-white px-4 py-2 text-sm font-medium shadow-sm border border-gray-200 dark:bg-gray-900 dark:border-gray-800 dark:text-gray-300">
+          React
+        </span>
+        <span className="rounded-full bg-white px-4 py-2 text-sm font-medium shadow-sm border border-gray-200 dark:bg-gray-900 dark:border-gray-800 dark:text-gray-300">
+          TypeScript
+        </span>
+        <span className="rounded-full bg-white px-4 py-2 text-sm font-medium shadow-sm border border-gray-200 dark:bg-gray-900 dark:border-gray-800 dark:text-gray-300">
+          Tailwind CSS
+        </span>
+        <span className="rounded-full bg-white px-4 py-2 text-sm font-medium shadow-sm border border-gray-200 dark:bg-gray-900 dark:border-gray-800 dark:text-gray-300">
+          HTML5
+        </span>
       </div>
-    );
-  }
-}
+      <div className="mt-8 text-sm text-gray-500 dark:text-gray-500">
+        &copy; {new Date().getFullYear()} Mineth Weerasinghe. All rights reserved.
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

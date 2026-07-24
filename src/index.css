@@ -5,3 +5,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+::selection {
+  background: rgba(147, 51, 234, 0.3);
+}
