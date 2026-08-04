@@ -43,8 +43,9 @@ const Intro: React.FC = () => {
             Software Engineer | Full Stack Developer
           </h2>
           <p className="mt-6 max-w-lg text-base text-gray-600 dark:text-gray-300 sm:text-lg">
-            Third year Computer Science & Engineering student at the University of Moratuwa, interested in Software
-            Engineering & web development.
+            Software engineering enthusiast with experience in full-stack application development, cloud technologies,
+            and software engineering research. Passionate about building scalable, reliable software systems and
+            continuously learning new technologies.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:justify-start">
