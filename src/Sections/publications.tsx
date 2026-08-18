@@ -64,18 +64,29 @@ const Publications: React.FC = () => {
             into microservices, using a consistent metric pipeline across widely used benchmark systems.
           </p>
 
-          <a
-            href="https://link.springer.com/chapter/10.1007/978-3-032-32032-2_29"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-gray-900 px-6 py-3 font-semibold text-white shadow-md transition-all hover:scale-105 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-200"
-            aria-label="Read From Monolith to Microservices on Springer"
-          >
-            Read on Springer
-            <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">
-              &rarr;
-            </span>
-          </a>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a
+              href="https://link.springer.com/chapter/10.1007/978-3-032-32032-2_29"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-gray-900 px-6 py-3 font-semibold text-white shadow-md transition-all hover:scale-105 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-200"
+              aria-label="Read From Monolith to Microservices on Springer"
+            >
+              Read on Springer
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+
+            <a
+              href="https://arxiv.org/abs/2601.23141"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 font-semibold text-white shadow-md transition-all hover:scale-105 hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:from-blue-500 dark:to-purple-500"
+              aria-label="Read the From Monolith to Microservices preprint on arXiv"
+            >
+              Read on arXiv
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
         </article>
       </div>
     </section>

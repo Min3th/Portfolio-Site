@@ -88,7 +88,7 @@ const Intro: React.FC = () => {
             <div className="hidden h-10 w-px bg-gray-300 dark:bg-gray-700 sm:block"></div>
 
             <a
-              href="/Mineth_Weerasinghe_CV.pdf"
+              href="https://mineth-weerasinghe-cv.s3.eu-north-1.amazonaws.com/Mineth_Weerasinghe_CV.pdf"
               download="Mineth_Weerasinghe_CV.pdf"
               className="rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 font-semibold text-white shadow-md transition-all hover:-translate-y-1 hover:shadow-lg dark:from-blue-500 dark:to-purple-500"
             >
